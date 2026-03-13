@@ -7,10 +7,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 TOKEN = os.environ.get("BOT_TOKEN", "8615831210:AAGNV7Wb3rSd3zNguzwFDBcXsBALR7Ul5q8")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "مرحباً معك بوت التحميل المطور من قبل المهندس مصطفى 🧑🏻‍💻!
-ارسل رابط أي فيديو لتحميله ......🦅"
-    )
+    await update.message.reply_text("مرحباً معك بوت التحميل المطور من قبل المهندس مصطفى 🧑🏻‍💻!
+ارسل رابط أي فيديو لتحميله")
 
 async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text.strip()
