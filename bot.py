@@ -8,7 +8,8 @@ TOKEN = os.environ.get("BOT_TOKEN", "8615831210:AAGNV7Wb3rSd3zNguzwFDBcXsBALR7Ul
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "مرحباً معك بوت التحميل المطور من قبل 👩🏼‍💻المهندس مصطفى! 👋\nأرسل لي رابط فيديو لتحميله لك.\n\nيدعم: YouTube, TikTok, Instagram, Twitter وغيرها."
+        "مرحباً معك بوت التحميل المطور من قبل المهندس مصطفى 🧑🏻‍💻!
+ارسل رابط أي فيديو لتحميله .....🦅"
     )
 
 async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
